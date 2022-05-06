@@ -1,0 +1,6 @@
+version: '3'
+services:
+  weather-fetcher:
+    build: .
+    ports:
+      - '8000:8000'

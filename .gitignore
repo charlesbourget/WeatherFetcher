@@ -1,0 +1,6 @@
+.swp
+config/*.yaml
+build/
+Godeps/
+!Godeps/Godeps.json
+WeatherFetcher
