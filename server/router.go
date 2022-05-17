@@ -20,6 +20,8 @@ func NewRouter() *gin.Engine {
 		{
 			weather := new(controllers.WeatherController)
 			weatherGroup.GET("/current", weather.Current)
+			weatherGroup.GET("/forecast", weather.Forecast)
+			weatherGroup.GET("/", weather.Weather)
 		}
 	}
 	return router
